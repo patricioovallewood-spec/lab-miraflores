@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" data-i18n="meta_desc" content="LabMiraflores — Laboratorio de Innovación del distrito de Miraflores. Co-creamos soluciones a problemas públicos, instalamos capacidades y medimos la innovación para mejorar los servicios al ciudadano." />
+<meta name="theme-color" content="#00875A" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="LabMiraflores — Laboratorio de Innovación de Miraflores" />
+<meta property="og:description" content="Innovación pública al servicio de los vecinos de Miraflores." />
+<meta property="og:locale" content="es_PE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>LabMiraflores — Laboratorio de Innovación de Miraflores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GovernmentOrganization","name":"LabMiraflores","alternateName":"Laboratorio de Innovación de Miraflores","description":"Laboratorio de innovación pública del distrito de Miraflores: co-creación de soluciones, instalación de capacidades y medición de la innovación.","areaServed":{"@type":"City","name":"Miraflores, Lima, Perú"},"inLanguage":["es","en"]}
+</script>
+<style>
+:root{
+  --verde-900:#00432C;--verde-700:#006644;--verde:#00875A;--verde-400:#2FB185;
+  --arena:#F3EEE4;--coral:#F26A4B;--dorado:#E8B04B;--mar:#0E7C9B;--morado:#6A4C93;
+  --blanco:#FFFFFF;--tinta:#0F1A16;--tinta-2:#41504A;--gris:#8A968F;--crema:#FAF8F3;--linea:#E4E0D6;
+  --font-display:'Fraunces',Georgia,serif;--font-body:'Manrope',system-ui,sans-serif;
+  --fs-300:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);--fs-400:clamp(0.95rem,0.9rem + 0.2vw,1.0625rem);
+  --fs-500:clamp(1.125rem,1.05rem + 0.4vw,1.375rem);--fs-600:clamp(1.5rem,1.3rem + 0.9vw,2.125rem);
+  --fs-700:clamp(2rem,1.6rem + 1.8vw,3rem);--fs-800:clamp(2.75rem,2rem + 3.5vw,4.5rem);--fs-900:clamp(3.25rem,2.3rem + 5vw,6rem);
+  --sp-1:0.5rem;--sp-2:1rem;--sp-3:1.5rem;--sp-4:2rem;--sp-5:3rem;--sp-6:4rem;--sp-7:6rem;--sp-8:8rem;
+  --container:1300px;--radius-sm:6px;--radius-md:14px;--radius-lg:26px;
+  --shadow-sm:0 2px 10px rgba(15,26,22,.06);--shadow-md:0 16px 40px rgba(15,26,22,.12);
+  --ease:cubic-bezier(.22,.8,.28,1);--dur:280ms;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:var(--font-body);font-size:var(--fs-400);line-height:1.6;color:var(--tinta);background:var(--blanco);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+img,svg,video{max-width:100%;display:block;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+a{color:var(--verde);text-decoration:none;transition:color var(--dur) var(--ease);}
+a:hover{color:var(--verde-900);}
+:focus-visible{outline:3px solid var(--dorado);outline-offset:3px;border-radius:var(--radius-sm);}
+.skip-link{position:absolute;top:-100px;left:var(--sp-2);background:var(--tinta);color:var(--blanco);padding:var(--sp-1) var(--sp-2);border-radius:var(--radius-sm);z-index:1000;transition:top var(--dur) var(--ease);}
+.skip-link:focus{top:var(--sp-2);color:var(--blanco);}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--sp-3);}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;letter-spacing:-0.015em;color:var(--tinta);margin:0 0 var(--sp-3);}
+h1{font-size:var(--fs-900);}h2{font-size:var(--fs-800);}h3{font-size:var(--fs-600);}
+h4{font-family:var(--font-body);font-weight:700;font-size:var(--fs-500);margin:0 0 var(--sp-2);line-height:1.2;}
+p{margin:0 0 var(--sp-2);color:var(--tinta-2);max-width:64ch;font-size:var(--fs-400);}
+.eyebrow{display:inline-flex;align-items:center;gap:var(--sp-1);font-size:var(--fs-300);font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--verde);margin-bottom:var(--sp-3);}
+.eyebrow::before{content:'';width:26px;height:2px;background:var(--verde);}
+.iso{width:38px;height:38px;flex-shrink:0;}
+
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--linea);}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);padding:var(--sp-2) 0;}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;color:var(--tinta);font-size:1.3rem;letter-spacing:-0.02em;cursor:pointer;}
+.brand .mf{color:var(--verde);}
+.nav-menu{display:flex;gap:var(--sp-1);list-style:none;margin:0;padding:0;align-items:center;}
+.nav-item{position:relative;}
+.nav-item>a{display:inline-flex;align-items:center;gap:6px;color:var(--tinta);font-weight:600;font-size:var(--fs-400);padding:10px 13px;border-radius:var(--radius-sm);transition:all var(--dur) var(--ease);}
+.nav-item>a:hover,.nav-item.is-current>a{color:var(--verde-900);background:var(--crema);}
+.nav-item.has-sub>a::after{content:'';width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;opacity:.55;transition:transform var(--dur) var(--ease);}
+.nav-item.has-sub:hover>a::after{transform:rotate(225deg);margin-top:2px;}
+.submenu{position:absolute;top:100%;left:0;min-width:250px;background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:var(--sp-1);list-style:none;margin:8px 0 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:all var(--dur) var(--ease);z-index:50;}
+.nav-item.has-sub:hover .submenu,.nav-item.has-sub:focus-within .submenu{opacity:1;visibility:visible;transform:translateY(0);}
+.submenu a{display:block;padding:10px 13px;border-radius:var(--radius-sm);color:var(--tinta-2);font-size:var(--fs-400);font-weight:500;}
+.submenu a:hover{background:var(--crema);color:var(--verde-900);}
+.nav-actions{display:flex;align-items:center;gap:var(--sp-2);}
+.lang-toggle{display:inline-flex;align-items:center;background:var(--crema);border:1px solid var(--linea);border-radius:999px;padding:3px;font-weight:700;font-size:var(--fs-300);}
+.lang-toggle button{padding:6px 12px;border-radius:999px;color:var(--gris);transition:all var(--dur) var(--ease);}
+.lang-toggle button.active{background:var(--verde);color:var(--blanco);}
+.nav-cta{background:var(--coral);color:var(--blanco);padding:11px 20px;border-radius:999px;font-weight:700;font-size:var(--fs-300);white-space:nowrap;transition:all var(--dur) var(--ease);}
+.nav-cta:hover{background:var(--tinta);color:var(--blanco);transform:translateY(-1px);}
+.menu-toggle{display:none;width:44px;height:44px;border-radius:var(--radius-sm);align-items:center;justify-content:center;}
+.menu-toggle span{width:22px;height:2px;background:var(--tinta);position:relative;}
+.menu-toggle span::before,.menu-toggle span::after{content:'';position:absolute;left:0;width:22px;height:2px;background:var(--tinta);}
+.menu-toggle span::before{top:-7px;}.menu-toggle span::after{top:7px;}
+@media (max-width:1080px){.menu-toggle{display:inline-flex;}.nav-menu{display:none;}.nav-menu.is-open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:var(--blanco);padding:var(--sp-2);border-bottom:1px solid var(--linea);box-shadow:var(--shadow-md);gap:2px;max-height:80vh;overflow-y:auto;}.nav-menu.is-open .submenu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 0 var(--sp-3);min-width:0;margin:0;}.nav-cta{display:none;}}
+
+.page{display:none;}
+.page.is-active{display:block;animation:fade .4s var(--ease);}
+@keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+
+.hero{position:relative;overflow:hidden;background:var(--verde-900);color:var(--blanco);padding:var(--sp-8) 0 var(--sp-7);isolation:isolate;}
+.hero::before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(160deg,var(--verde-900) 0%,var(--verde-700) 60%,var(--mar) 130%);}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:120px;z-index:-1;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'><path d='M0,40 C300,110 500,0 700,45 C900,90 1050,30 1200,55 L1200,120 L0,120 Z' fill='%23ffffff' fill-opacity='0.06'/></svg>");background-size:cover;pointer-events:none;}
+.hero h1{color:var(--blanco);max-width:17ch;margin-bottom:var(--sp-3);}
+.hero .eyebrow{color:var(--dorado);}.hero .eyebrow::before{background:var(--dorado);}
+.hero p.lead{color:rgba(255,255,255,.85);font-size:var(--fs-500);max-width:56ch;margin-bottom:var(--sp-4);}
+.hero-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-6);}
+.hero-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--sp-4);border-top:1px solid rgba(255,255,255,.16);padding-top:var(--sp-4);}
+.hero-metric .n{font-family:var(--font-display);font-weight:700;font-size:var(--fs-700);color:var(--dorado);line-height:1;display:block;}
+.hero-metric p{color:rgba(255,255,255,.72);font-size:var(--fs-300);margin:var(--sp-1) 0 0;}
+
+.page-hero{position:relative;overflow:hidden;background:var(--verde-900);color:var(--blanco);padding:var(--sp-7) 0 var(--sp-6);}
+.page-hero::before{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(160deg,var(--verde-900),var(--verde-700));}
+.page-hero.coral::before{background:linear-gradient(160deg,#8f2f1f,var(--coral));}
+.page-hero.mar::before{background:linear-gradient(160deg,#083f52,var(--mar));}
+.page-hero.morado::before{background:linear-gradient(160deg,#2f2247,var(--morado));}
+.page-hero>.container{position:relative;z-index:1;}
+.page-hero h1{color:var(--blanco);font-size:var(--fs-800);max-width:18ch;}
+.page-hero .eyebrow{color:var(--dorado);}.page-hero .eyebrow::before{background:var(--dorado);}
+.page-hero p{color:rgba(255,255,255,.85);max-width:60ch;font-size:var(--fs-500);}
+
+.btn{display:inline-flex;align-items:center;gap:var(--sp-1);padding:15px 30px;border-radius:999px;font-weight:700;font-size:var(--fs-400);transition:all var(--dur) var(--ease);cursor:pointer;border:2px solid transparent;}
+.btn-primary{background:var(--coral);color:var(--blanco);}
+.btn-primary:hover{background:var(--blanco);color:var(--tinta);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-ghost{background:transparent;color:var(--blanco);border-color:rgba(255,255,255,.4);}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--blanco);color:var(--blanco);}
+.btn-dark{background:var(--verde);color:var(--blanco);}
+.btn-dark:hover{background:var(--verde-900);color:var(--blanco);transform:translateY(-2px);}
+
+section{padding:var(--sp-7) 0;}
+.section-head{max-width:760px;margin-bottom:var(--sp-4);}
+.bg-crema{background:var(--crema);}
+.bg-verde{background:var(--verde-900);color:var(--blanco);}
+.bg-verde h2,.bg-verde h3{color:var(--blanco);}.bg-verde p{color:rgba(255,255,255,.78);}
+.bg-verde .eyebrow{color:var(--dorado);}.bg-verde .eyebrow::before{background:var(--dorado);}
+
+.grid-auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.card{padding:var(--sp-4);border:1px solid var(--linea);border-radius:var(--radius-md);background:var(--blanco);transition:all var(--dur) var(--ease);position:relative;overflow:hidden;}
+.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:var(--cc,var(--verde));transform:scaleX(0);transform-origin:left;transition:transform var(--dur) var(--ease);}
+.card:hover{border-color:var(--cc,var(--verde));transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.card:hover::before{transform:scaleX(1);}
+.card .ic{width:52px;height:52px;border-radius:var(--radius-sm);background:var(--verde-900);color:var(--dorado);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:var(--fs-500);margin-bottom:var(--sp-3);}
+.card h4{margin-bottom:var(--sp-1);}.card p{margin:0;font-size:var(--fs-400);}
+.card .more{display:inline-block;margin-top:var(--sp-2);font-weight:700;color:var(--verde);font-size:var(--fs-300);cursor:pointer;}
+.card:nth-child(4n+1){--cc:var(--verde);}.card:nth-child(4n+2){--cc:var(--coral);}.card:nth-child(4n+3){--cc:var(--mar);}.card:nth-child(4n+4){--cc:var(--dorado);}
+
+/* Servicios grandes (3 servicios del lab) */
+.servicios{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-3);margin-top:var(--sp-5);}
+.servicio{padding:var(--sp-5) var(--sp-4);border-radius:var(--radius-lg);color:var(--blanco);position:relative;overflow:hidden;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;transition:transform var(--dur) var(--ease);}
+.servicio:hover{transform:translateY(-6px);}
+.servicio .tag{font-size:var(--fs-300);text-transform:uppercase;letter-spacing:.1em;opacity:.85;}
+.servicio h3{color:var(--blanco);font-size:var(--fs-600);margin:var(--sp-2) 0;}
+.servicio p{color:rgba(255,255,255,.85);font-size:var(--fs-400);}
+.servicio.s1{background:linear-gradient(160deg,var(--verde-700),var(--verde));}
+.servicio.s2{background:linear-gradient(160deg,#8f2f1f,var(--coral));}
+.servicio.s3{background:linear-gradient(160deg,#083f52,var(--mar));}
+
+/* Fases metodología (5 fases) */
+.fases{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--sp-2);margin-top:var(--sp-4);counter-reset:f;}
+.fase{padding:var(--sp-4) var(--sp-3);border-radius:var(--radius-md);background:var(--blanco);border:1px solid var(--linea);counter-increment:f;transition:all var(--dur) var(--ease);}
+.fase:hover{border-color:var(--verde);transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.fase::before{content:counter(f,decimal-leading-zero);font-family:var(--font-display);font-size:var(--fs-700);color:var(--verde);display:block;line-height:1;margin-bottom:var(--sp-2);}
+.fase h4{font-size:var(--fs-400);}.fase p{font-size:var(--fs-300);margin:0;}
+
+/* Ámbitos */
+.ambitos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-2);margin-top:var(--sp-4);}
+.ambito{padding:var(--sp-4);border-radius:var(--radius-md);background:var(--blanco);border:1px solid var(--linea);border-left:5px solid var(--verde);}
+.ambito:nth-child(2){border-left-color:var(--coral);}
+.ambito:nth-child(3){border-left-color:var(--mar);}
+.ambito:nth-child(4){border-left-color:var(--dorado);}
+.ambito h4{color:var(--verde-900);}.ambito p{font-size:var(--fs-300);margin:0;}
+
+/* Proyectos */
+.stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.story{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;transition:all var(--dur) var(--ease);}
+.story:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.story-img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--verde),var(--mar));}
+.story:nth-child(3n+2) .story-img{background:linear-gradient(135deg,var(--coral),var(--dorado));}
+.story:nth-child(3n+3) .story-img{background:linear-gradient(135deg,var(--morado),var(--verde-700));}
+.story-body{padding:var(--sp-3);flex:1;}
+.story-body .tag{font-weight:700;font-size:var(--fs-300);color:var(--coral);text-transform:uppercase;letter-spacing:.05em;}
+.story-body h4{font-size:var(--fs-400);margin:var(--sp-1) 0 0;line-height:1.3;}
+
+.prop-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5);margin-top:var(--sp-4);}
+.prop-list{list-style:none;padding:0;margin:0;}
+.prop-list li{padding:var(--sp-2) 0;border-bottom:1px solid var(--linea);display:flex;gap:var(--sp-2);align-items:flex-start;font-size:var(--fs-400);color:var(--tinta);}
+.prop-list li::before{content:'→';color:var(--verde);font-weight:700;flex-shrink:0;}
+@media (max-width:760px){.prop-grid{grid-template-columns:1fr;gap:var(--sp-3);}}
+
+.cta{padding:var(--sp-8) 0;background:var(--dorado);color:var(--tinta);text-align:center;}
+.cta h2{color:var(--tinta);max-width:20ch;margin-inline:auto;}
+.cta p{color:var(--tinta);opacity:.85;font-size:var(--fs-500);margin:0 auto var(--sp-4);max-width:50ch;}
+
+.form{max-width:640px;margin-top:var(--sp-4);display:grid;gap:var(--sp-2);}
+.form label{font-weight:600;font-size:var(--fs-300);text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-2);}
+.form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1px solid var(--linea);border-radius:var(--radius-sm);font:inherit;color:var(--tinta);background:var(--blanco);}
+.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--verde);outline:none;}
+.form .field{display:grid;gap:6px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2);}
+@media (max-width:600px){.form-row{grid-template-columns:1fr;}}
+
+.site-footer{background:var(--verde-900);color:rgba(255,255,255,.72);padding:var(--sp-6) 0 var(--sp-3);font-size:var(--fs-300);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--sp-4);margin-bottom:var(--sp-4);}
+.site-footer h5{color:var(--blanco);text-transform:uppercase;letter-spacing:.1em;font-size:var(--fs-300);margin:0 0 var(--sp-2);font-weight:700;}
+.site-footer ul{list-style:none;padding:0;margin:0;}.site-footer li{margin-bottom:var(--sp-1);}
+.site-footer a{color:rgba(255,255,255,.72);cursor:pointer;}.site-footer a:hover{color:var(--dorado);}
+.footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:var(--fs-500);color:var(--blanco);margin-bottom:var(--sp-2);}
+.footer-bottom{padding-top:var(--sp-3);border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--sp-2);}
+@media (max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:540px){.footer-grid{grid-template-columns:1fr;}}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
+.reveal.is-visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+.lead-narrow{max-width:680px;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="iso-mf" viewBox="0 0 100 100"><circle cx="50" cy="34" r="16" fill="var(--dorado)"/><path d="M6,64 Q28,48 50,64 T94,64" fill="none" stroke="var(--verde)" stroke-width="7" stroke-linecap="round"/><path d="M6,80 Q28,64 50,80 T94,80" fill="none" stroke="var(--mar)" stroke-width="7" stroke-linecap="round"/></symbol></svg>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" data-go="inicio" aria-label="LabMiraflores">
+      <svg class="iso" aria-hidden="true"><use href="#iso-mf"/></svg>
+      Lab<span class="mf">Miraflores</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a data-go="inicio" data-i18n="nav_home">Inicio</a></li>
+        <li class="nav-item"><a data-go="lab" data-i18n="nav_lab">¿Qué es el Lab?</a></li>
+        <li class="nav-item has-sub"><a data-go="innovacion" data-i18n="nav_innov">Innovación pública</a>
+          <ul class="submenu">
+            <li><a data-go="innovacion" data-anchor="servicios" data-i18n="nav_serv">Nuestros servicios</a></li>
+            <li><a data-go="innovacion" data-anchor="metodologia" data-i18n="nav_met">Metodología</a></li>
+            <li><a data-go="innovacion" data-anchor="ambitos" data-i18n="nav_amb">Ámbitos de innovación</a></li>
+          </ul></li>
+        <li class="nav-item"><a data-go="proyectos" data-i18n="nav_proj">Proyectos</a></li>
+        <li class="nav-item"><a data-go="noticias" data-i18n="nav_news">Noticias</a></li>
+        <li class="nav-item"><a data-go="contacto" data-i18n="nav_contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-toggle" role="group" aria-label="Idioma"><button data-lang-btn="es" class="active" aria-pressed="true">ES</button><button data-lang-btn="en" aria-pressed="false">EN</button></div>
+      <a class="nav-cta" data-go="contacto" data-i18n="nav_cta">Trabaja con el Lab</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ INICIO ============ -->
+<div class="page is-active" id="page-inicio">
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="h_eyebrow">Innovación pública · Miraflores</span>
+      <h1 data-i18n="h_title">Innovación pública al servicio de los vecinos.</h1>
+      <p class="lead" data-i18n="h_lead">Somos el laboratorio de innovación del distrito de Miraflores. Co-creamos soluciones a los problemas públicos que más importan, instalamos capacidades para innovar en la municipalidad y medimos su impacto para mejorar los servicios al ciudadano.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-go="lab" data-i18n="h_cta1">Conoce el Lab</a>
+        <a class="btn btn-ghost" data-go="innovacion" data-i18n="h_cta2">Nuestros servicios</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="hero-metric"><span class="n">32</span><p data-i18n="h_m1">proyectos de innovación desarrollados</p></div>
+        <div class="hero-metric"><span class="n">18</span><p data-i18n="h_m2">gerencias municipales acompañadas</p></div>
+        <div class="hero-metric"><span class="n">240+</span><p data-i18n="h_m3">funcionarios formados en innovación</p></div>
+        <div class="hero-metric"><span class="n">85%</span><p data-i18n="h_m4">de soluciones adoptadas institucionalmente</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="i_eyebrow">Qué hacemos</span>
+        <h2 data-i18n="i_title">Del problema a la solución adoptada.</h2>
+        <p data-i18n="i_lead">Acompañamos a las gerencias de la municipalidad en todo el ciclo: identificamos el problema, co-diseñamos soluciones con quienes las usarán, las probamos, las evaluamos y ayudamos a que se instalen de forma permanente.</p>
+      </div>
+      <div class="grid-auto">
+        <article class="card reveal"><div class="ic">01</div><h4 data-i18n="i_1t">Identificamos</h4><p data-i18n="i_1d">Trabajamos con las gerencias para entender el problema real, con datos y escucha a los vecinos.</p></article>
+        <article class="card reveal"><div class="ic">02</div><h4 data-i18n="i_2t">Co-diseñamos</h4><p data-i18n="i_2d">Creamos soluciones junto a funcionarios y usuarios, no para ellos.</p></article>
+        <article class="card reveal"><div class="ic">03</div><h4 data-i18n="i_3t">Probamos y evaluamos</h4><p data-i18n="i_3d">Testeamos prototipos, medimos resultados y ajustamos con evidencia.</p></article>
+        <article class="card reveal"><div class="ic">04</div><h4 data-i18n="i_4t">Institucionalizamos</h4><p data-i18n="i_4d">Ayudamos a que la solución se adopte y perdure en la gestión municipal.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-crema">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="sv_eyebrow">Nuestros servicios</span>
+        <h2 data-i18n="sv_title">Tres formas de crear valor público.</h2>
+      </div>
+      <div class="servicios">
+        <article class="servicio s1 reveal"><div><span class="tag" data-i18n="sv_1_tag">Servicio 01</span><h3 data-i18n="sv_1_t">Consultoría Ágil</h3><p data-i18n="sv_1_d">Acompañamos a las gerencias en la co-creación de soluciones concretas a problemas de impacto ciudadano, con metodologías flexibles centradas en las personas.</p></div><span style="font-weight:700;" data-go="innovacion" data-anchor="servicios">Conocer →</span></article>
+        <article class="servicio s2 reveal"><div><span class="tag" data-i18n="sv_2_tag">Servicio 02</span><h3 data-i18n="sv_2_t">Red de Innovadores</h3><p data-i18n="sv_2_d">Formamos y conectamos a los funcionarios de la municipalidad en una comunidad que aprende, comparte y mejora los servicios del distrito.</p></div><span style="font-weight:700;" data-go="innovacion" data-anchor="servicios">Conocer →</span></article>
+        <article class="servicio s3 reveal"><div><span class="tag" data-i18n="sv_3_tag">Servicio 03</span><h3 data-i18n="sv_3_t">Índice de Innovación</h3><p data-i18n="sv_3_d">Medimos las capacidades de innovación de las áreas municipales para fortalecerlas y tomar decisiones basadas en evidencia.</p></div><span style="font-weight:700;" data-go="innovacion" data-anchor="servicios">Conocer →</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="pj_eyebrow">Proyectos</span>
+        <h2 data-i18n="pj_title">Innovación que se ve en la calle.</h2>
+        <p style="color:var(--gris);font-size:var(--fs-300);" data-i18n="pj_note">Proyectos ilustrativos para la maqueta; por reemplazar con casos reales.</p>
+      </div>
+      <div class="stories">
+        <article class="story reveal"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="pj_1_tag">Atención al vecino</span><h4 data-i18n="pj_1_t">Rediseño de la atención de licencias de funcionamiento</h4></div></article>
+        <article class="story reveal"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="pj_2_tag">Espacio público</span><h4 data-i18n="pj_2_t">Parques más seguros co-diseñados con los vecinos</h4></div></article>
+        <article class="story reveal"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="pj_3_tag">Trámites</span><h4 data-i18n="pj_3_t">Trámites municipales en lenguaje claro</h4></div></article>
+      </div>
+      <div style="margin-top:2rem;"><a class="btn btn-dark" data-go="proyectos" data-i18n="pj_cta">Ver todos los proyectos →</a></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container reveal">
+      <h2 data-i18n="c_title">¿Tu gerencia tiene un desafío?</h2>
+      <p data-i18n="c_p">Trabajemos juntos para convertirlo en una mejor experiencia para los vecinos.</p>
+      <a class="btn btn-primary" data-go="contacto" data-i18n="c_btn">Trabaja con el Lab →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ QUÉ ES EL LAB ============ -->
+<div class="page" id="page-lab">
+  <section class="page-hero"><div class="container"><span class="eyebrow" data-i18n="l_eyebrow">¿Qué es el Lab?</span><h1 data-i18n="l_title">El laboratorio de innovación de Miraflores.</h1><p data-i18n="l_lead">Somos el área de la municipalidad que acelera la transformación de los servicios públicos de cara a los vecinos, usando metodologías colaborativas de diseño.</p></div></section>
+  <section><div class="container"><div class="prop-grid">
+    <div class="reveal"><span class="eyebrow" data-i18n="l_mv_e">Propósito</span><h2 style="font-size:var(--fs-600);" data-i18n="l_mis_t">Nuestra misión</h2><p data-i18n="l_mis_d">Co-crear soluciones a los problemas públicos prioritarios del distrito, instalar capacidades para innovar en los equipos municipales y medir esas capacidades para fortalecerlas, con el objetivo de mejorar los servicios y la relación con la ciudadanía.</p><h2 style="font-size:var(--fs-600);margin-top:2rem;" data-i18n="l_vis_t">Nuestra visión</h2><p data-i18n="l_vis_d">Que Miraflores sea el distrito con la mejor experiencia de servicio público del Perú, gracias a una gestión ágil, experimental, colaborativa y basada en evidencia.</p></div>
+    <div class="reveal"><span class="eyebrow" data-i18n="l_pr_e">Principios</span><h2 style="font-size:var(--fs-600);" data-i18n="l_pr_t">Cómo trabajamos</h2><ul class="prop-list">
+      <li data-i18n="l_p1">Ponemos a las personas en el centro de cada solución.</li>
+      <li data-i18n="l_p2">Aprendemos probando: prototipamos, medimos y ajustamos.</li>
+      <li data-i18n="l_p3">Co-creamos con funcionarios y vecinos, no desde el escritorio.</li>
+      <li data-i18n="l_p4">Decidimos con evidencia, no con intuición.</li>
+      <li data-i18n="l_p5">Buscamos que la innovación quede instalada, no que dependa del Lab.</li>
+    </ul></div>
+  </div></div></section>
+  <section class="bg-verde"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="l_ref_e">Referentes</span><h2 data-i18n="l_ref_t">Inspirados en los mejores del mundo.</h2><p class="lead-narrow" data-i18n="l_ref_d">El modelo del Lab se inspira en referentes internacionales de innovación pública —como los laboratorios de gobierno de la región, los equipos de innovación municipal de Bloomberg y el observatorio de innovación de la OCDE— adaptados a la escala y realidad de un distrito como Miraflores.</p></div></div></section>
+</div>
+
+<!-- ============ INNOVACIÓN PÚBLICA ============ -->
+<div class="page" id="page-innovacion">
+  <section class="page-hero morado"><div class="container"><span class="eyebrow" data-i18n="in_eyebrow">Innovación pública</span><h1 data-i18n="in_title">Cómo convertimos problemas en soluciones.</h1><p data-i18n="in_lead">Nuestros servicios, metodología y ámbitos de trabajo para transformar los servicios del distrito.</p></div></section>
+  <section id="servicios"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="in_s_e">Nuestros servicios</span><h2 data-i18n="in_s_t">Tres servicios, un objetivo.</h2></div><div class="servicios">
+    <article class="servicio s1 reveal"><div><span class="tag" data-i18n="in_s_1tag">Co-creación</span><h3 data-i18n="in_s_1t">Consultoría Ágil</h3><p data-i18n="in_s_1d">Acompañamos a una gerencia con un desafío concreto y co-creamos con ella una solución, de principio a fin, con foco en el vecino.</p></div></article>
+    <article class="servicio s2 reveal"><div><span class="tag" data-i18n="in_s_2tag">Capacidades</span><h3 data-i18n="in_s_2t">Red de Innovadores</h3><p data-i18n="in_s_2d">Formamos a funcionarios en herramientas de innovación y los conectamos en una comunidad de práctica del distrito.</p></div></article>
+    <article class="servicio s3 reveal"><div><span class="tag" data-i18n="in_s_3tag">Medición</span><h3 data-i18n="in_s_3t">Índice de Innovación</h3><p data-i18n="in_s_3d">Medimos y monitoreamos las capacidades de innovación de las áreas para reforzarlas donde más se necesita.</p></div></article>
+  </div></div></section>
+  <section class="bg-crema" id="metodologia"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="in_m_e">Metodología</span><h2 data-i18n="in_m_t">Cinco fases, foco en las personas.</h2><p class="lead-narrow" data-i18n="in_m_d">Cada proyecto recorre cinco fases que combinan escucha, creatividad, prueba y evidencia.</p></div><div class="fases reveal">
+    <article class="fase"><h4 data-i18n="in_f_1t">Contexto</h4><p data-i18n="in_f_1d">Entendemos la institución, el problema y su alcance real.</p></article>
+    <article class="fase"><h4 data-i18n="in_f_2t">Investigación</h4><p data-i18n="in_f_2d">Escuchamos a vecinos y funcionarios; recogemos datos.</p></article>
+    <article class="fase"><h4 data-i18n="in_f_3t">Ideación</h4><p data-i18n="in_f_3d">Generamos ideas nuevas o mejoradas para el desafío.</p></article>
+    <article class="fase"><h4 data-i18n="in_f_4t">Prototipo</h4><p data-i18n="in_f_4d">Diseñamos y probamos la solución a pequeña escala.</p></article>
+    <article class="fase"><h4 data-i18n="in_f_5t">Implementación</h4><p data-i18n="in_f_5d">Escalamos lo que funciona y lo dejamos instalado.</p></article>
+  </div></div></section>
+  <section id="ambitos"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="in_a_e">Ámbitos de innovación</span><h2 data-i18n="in_a_t">Cuatro frentes de trabajo.</h2></div><div class="ambitos reveal">
+    <article class="ambito"><h4 data-i18n="in_a_1t">Estrategia y gobernanza</h4><p data-i18n="in_a_1d">Alineamiento de equipos, colaboración entre áreas y cambios administrativos.</p></article>
+    <article class="ambito"><h4 data-i18n="in_a_2t">Experiencia y servicios</h4><p data-i18n="in_a_2d">Mejora de la experiencia usuaria, lenguaje claro y cambios de comportamiento.</p></article>
+    <article class="ambito"><h4 data-i18n="in_a_3t">Procesos y tecnología</h4><p data-i18n="in_a_3d">Rediseño de procesos internos con base tecnológica y uso de datos.</p></article>
+    <article class="ambito"><h4 data-i18n="in_a_4t">Cultura y capacidades</h4><p data-i18n="in_a_4d">Instalación de una cultura de innovación en los equipos municipales.</p></article>
+  </div></div></section>
+</div>
+
+<!-- ============ PROYECTOS ============ -->
+<div class="page" id="page-proyectos">
+  <section class="page-hero coral"><div class="container"><span class="eyebrow" data-i18n="p_eyebrow">Proyectos</span><h1 data-i18n="p_title">Innovación que mejora la vida del vecino.</h1><p data-i18n="p_lead">Una muestra de los desafíos que abordamos junto a las gerencias del distrito.</p></div></section>
+  <section><div class="container">
+    <div class="stories reveal">
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="p_1_tag">Atención al vecino</span><h4 data-i18n="p_1_t">Rediseño de la atención de licencias de funcionamiento</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="p_2_tag">Espacio público</span><h4 data-i18n="p_2_t">Parques más seguros co-diseñados con los vecinos</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="p_3_tag">Trámites</span><h4 data-i18n="p_3_t">Trámites municipales en lenguaje claro</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="p_4_tag">Movilidad</span><h4 data-i18n="p_4_t">Mejor experiencia de estacionamiento y ciclovías</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="p_5_tag">Turismo</span><h4 data-i18n="p_5_t">Experiencia del turista en el corazón de Miraflores</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="p_6_tag">Sostenibilidad</span><h4 data-i18n="p_6_t">Reciclaje vecinal con enfoque de comportamiento</h4></div></article>
+    </div>
+    <p style="margin-top:1.5rem;color:var(--gris);font-size:var(--fs-300);" data-i18n="p_note">Proyectos ilustrativos para la maqueta. Se reemplazarán con casos reales del distrito.</p>
+  </div></section>
+</div>
+
+<!-- ============ NOTICIAS ============ -->
+<div class="page" id="page-noticias">
+  <section class="page-hero"><div class="container"><span class="eyebrow" data-i18n="n_eyebrow">Noticias</span><h1 data-i18n="n_title">Novedades del Lab.</h1><p data-i18n="n_lead">Lo que pasa en la innovación pública de Miraflores.</p></div></section>
+  <section><div class="container">
+    <div class="stories reveal">
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="n_soon">Próximamente</span><h4 data-i18n="n_1">Miraflores lanza su Laboratorio de Innovación Pública</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="n_soon2">Próximamente</span><h4 data-i18n="n_2">Primera Red de Innovadores del distrito</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="tag" data-i18n="n_soon3">Próximamente</span><h4 data-i18n="n_3">Resultados del primer Índice de Innovación municipal</h4></div></article>
+    </div>
+    <p style="margin-top:1.5rem;color:var(--gris);font-size:var(--fs-300);" data-i18n="n_note">Contenido ilustrativo. Se reemplazará con noticias reales al entrar en operación.</p>
+  </div></section>
+</div>
+
+<!-- ============ CONTACTO ============ -->
+<div class="page" id="page-contacto">
+  <section class="page-hero mar"><div class="container"><span class="eyebrow" data-i18n="ct_eyebrow">Contacto</span><h1 data-i18n="ct_title">Trabaja con el Lab.</h1><p data-i18n="ct_lead">¿Tu gerencia tiene un desafío o quieres saber más sobre nuestra metodología? Escríbenos.</p></div></section>
+  <section><div class="container"><div class="prop-grid" style="align-items:start;">
+    <div class="reveal"><span class="eyebrow" data-i18n="ct_f_e">Escríbenos</span><h2 style="font-size:var(--fs-600);" data-i18n="ct_f_t">Formulario</h2>
+      <form class="form" onsubmit="return false;">
+        <div class="form-row"><div class="field"><label for="nom" data-i18n="ct_nom">Nombre</label><input type="text" id="nom" /></div><div class="field"><label for="ema" data-i18n="ct_ema">Correo</label><input type="email" id="ema" /></div></div>
+        <div class="field"><label for="ger" data-i18n="ct_ger">Gerencia / Área</label><input type="text" id="ger" /></div>
+        <div class="field"><label for="mot" data-i18n="ct_mot">Motivo</label><select id="mot"><option data-i18n="ct_o1">Tengo un desafío para co-crear</option><option data-i18n="ct_o2">Quiero sumarme a la Red de Innovadores</option><option data-i18n="ct_o3">Consulta sobre metodología</option><option data-i18n="ct_o4">Otro</option></select></div>
+        <div class="field"><label for="msg" data-i18n="ct_msg">Mensaje</label><textarea id="msg" rows="5"></textarea></div>
+        <button class="btn btn-primary" type="submit" data-i18n="ct_send">Enviar →</button>
+      </form>
+      <p style="color:var(--gris);font-size:var(--fs-300);margin-top:1rem;" data-i18n="ct_note">El formulario quedará operativo al conectarlo a un servicio como Formspree o Brevo. (Datos de contacto de ejemplo.)</p>
+    </div>
+    <div class="reveal"><span class="eyebrow" data-i18n="ct_d_e">Datos</span><h2 style="font-size:var(--fs-600);" data-i18n="ct_d_t">Dónde estamos</h2>
+      <p style="font-family:var(--font-display);font-size:var(--fs-500);color:var(--tinta);margin-bottom:4px;" data-i18n="ct_d_dir">Municipalidad de Miraflores</p>
+      <p data-i18n="ct_d_addr">Av. Larco 400, Miraflores, Lima 15074</p>
+      <p style="font-family:var(--font-display);font-size:var(--fs-500);color:var(--tinta);margin:var(--sp-3) 0 4px;" data-i18n="ct_d_mail">Correo</p>
+      <p><a href="mailto:lab@miraflores.gob.pe">lab@miraflores.gob.pe</a></p>
+    </div>
+  </div></div></section>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><svg class="iso" style="width:30px;height:30px;" aria-hidden="true"><use href="#iso-mf"/></svg> LabMiraflores</div>
+        <p style="color:rgba(255,255,255,.55);max-width:38ch;" data-i18n="ft_p">Laboratorio de innovación pública del distrito de Miraflores. Innovación al servicio de los vecinos.</p>
+      </div>
+      <div><h5 data-i18n="ft_h1">Explora</h5><ul>
+        <li><a data-go="lab" data-i18n="nav_lab">¿Qué es el Lab?</a></li>
+        <li><a data-go="innovacion" data-i18n="nav_innov">Innovación pública</a></li>
+        <li><a data-go="proyectos" data-i18n="nav_proj">Proyectos</a></li>
+        <li><a data-go="noticias" data-i18n="nav_news">Noticias</a></li>
+      </ul></div>
+      <div><h5 data-i18n="ft_h2">Servicios</h5><ul>
+        <li><a data-go="innovacion" data-anchor="servicios" data-i18n="ft_s1">Consultoría Ágil</a></li>
+        <li><a data-go="innovacion" data-anchor="servicios" data-i18n="ft_s2">Red de Innovadores</a></li>
+        <li><a data-go="innovacion" data-anchor="servicios" data-i18n="ft_s3">Índice de Innovación</a></li>
+      </ul></div>
+      <div><h5 data-i18n="ft_h3">Contacto</h5><ul>
+        <li><a href="mailto:lab@miraflores.gob.pe">lab@miraflores.gob.pe</a></li>
+        <li data-i18n="ft_loc">Miraflores, Lima, Perú</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><span data-i18n="ft_copy">© 2026 LabMiraflores. Propuesta.</span><span data-i18n="ft_insp">Laboratorio de innovación pública distrital.</span></div>
+  </div>
+</footer>
+
+<script>
+const I18N={
+ es:{
+  skip:"Saltar al contenido",
+  nav_home:"Inicio",nav_lab:"¿Qué es el Lab?",nav_innov:"Innovación pública",nav_serv:"Nuestros servicios",nav_met:"Metodología",nav_amb:"Ámbitos de innovación",nav_proj:"Proyectos",nav_news:"Noticias",nav_contact:"Contacto",nav_cta:"Trabaja con el Lab",
+  h_eyebrow:"Innovación pública · Miraflores",h_title:"Innovación pública al servicio de los vecinos.",h_lead:"Somos el laboratorio de innovación del distrito de Miraflores. Co-creamos soluciones a los problemas públicos que más importan, instalamos capacidades para innovar en la municipalidad y medimos su impacto para mejorar los servicios al ciudadano.",h_cta1:"Conoce el Lab",h_cta2:"Nuestros servicios",
+  h_m1:"proyectos de innovación desarrollados",h_m2:"gerencias municipales acompañadas",h_m3:"funcionarios formados en innovación",h_m4:"de soluciones adoptadas institucionalmente",
+  i_eyebrow:"Qué hacemos",i_title:"Del problema a la solución adoptada.",i_lead:"Acompañamos a las gerencias de la municipalidad en todo el ciclo: identificamos el problema, co-diseñamos soluciones con quienes las usarán, las probamos, las evaluamos y ayudamos a que se instalen de forma permanente.",
+  i_1t:"Identificamos",i_1d:"Trabajamos con las gerencias para entender el problema real, con datos y escucha a los vecinos.",i_2t:"Co-diseñamos",i_2d:"Creamos soluciones junto a funcionarios y usuarios, no para ellos.",i_3t:"Probamos y evaluamos",i_3d:"Testeamos prototipos, medimos resultados y ajustamos con evidencia.",i_4t:"Institucionalizamos",i_4d:"Ayudamos a que la solución se adopte y perdure en la gestión municipal.",
+  sv_eyebrow:"Nuestros servicios",sv_title:"Tres formas de crear valor público.",sv_1_tag:"Servicio 01",sv_1_t:"Consultoría Ágil",sv_1_d:"Acompañamos a las gerencias en la co-creación de soluciones concretas a problemas de impacto ciudadano, con metodologías flexibles centradas en las personas.",sv_2_tag:"Servicio 02",sv_2_t:"Red de Innovadores",sv_2_d:"Formamos y conectamos a los funcionarios de la municipalidad en una comunidad que aprende, comparte y mejora los servicios del distrito.",sv_3_tag:"Servicio 03",sv_3_t:"Índice de Innovación",sv_3_d:"Medimos las capacidades de innovación de las áreas municipales para fortalecerlas y tomar decisiones basadas en evidencia.",
+  pj_eyebrow:"Proyectos",pj_title:"Innovación que se ve en la calle.",pj_note:"Proyectos ilustrativos para la maqueta; por reemplazar con casos reales.",pj_1_tag:"Atención al vecino",pj_1_t:"Rediseño de la atención de licencias de funcionamiento",pj_2_tag:"Espacio público",pj_2_t:"Parques más seguros co-diseñados con los vecinos",pj_3_tag:"Trámites",pj_3_t:"Trámites municipales en lenguaje claro",pj_cta:"Ver todos los proyectos →",
+  c_title:"¿Tu gerencia tiene un desafío?",c_p:"Trabajemos juntos para convertirlo en una mejor experiencia para los vecinos.",c_btn:"Trabaja con el Lab →",
+  l_eyebrow:"¿Qué es el Lab?",l_title:"El laboratorio de innovación de Miraflores.",l_lead:"Somos el área de la municipalidad que acelera la transformación de los servicios públicos de cara a los vecinos, usando metodologías colaborativas de diseño.",
+  l_mv_e:"Propósito",l_mis_t:"Nuestra misión",l_mis_d:"Co-crear soluciones a los problemas públicos prioritarios del distrito, instalar capacidades para innovar en los equipos municipales y medir esas capacidades para fortalecerlas, con el objetivo de mejorar los servicios y la relación con la ciudadanía.",l_vis_t:"Nuestra visión",l_vis_d:"Que Miraflores sea el distrito con la mejor experiencia de servicio público del Perú, gracias a una gestión ágil, experimental, colaborativa y basada en evidencia.",
+  l_pr_e:"Principios",l_pr_t:"Cómo trabajamos",l_p1:"Ponemos a las personas en el centro de cada solución.",l_p2:"Aprendemos probando: prototipamos, medimos y ajustamos.",l_p3:"Co-creamos con funcionarios y vecinos, no desde el escritorio.",l_p4:"Decidimos con evidencia, no con intuición.",l_p5:"Buscamos que la innovación quede instalada, no que dependa del Lab.",
+  l_ref_e:"Referentes",l_ref_t:"Inspirados en los mejores del mundo.",l_ref_d:"El modelo del Lab se inspira en referentes internacionales de innovación pública —como los laboratorios de gobierno de la región, los equipos de innovación municipal de Bloomberg y el observatorio de innovación de la OCDE— adaptados a la escala y realidad de un distrito como Miraflores.",
+  in_eyebrow:"Innovación pública",in_title:"Cómo convertimos problemas en soluciones.",in_lead:"Nuestros servicios, metodología y ámbitos de trabajo para transformar los servicios del distrito.",
+  in_s_e:"Nuestros servicios",in_s_t:"Tres servicios, un objetivo.",in_s_1tag:"Co-creación",in_s_1t:"Consultoría Ágil",in_s_1d:"Acompañamos a una gerencia con un desafío concreto y co-creamos con ella una solución, de principio a fin, con foco en el vecino.",in_s_2tag:"Capacidades",in_s_2t:"Red de Innovadores",in_s_2d:"Formamos a funcionarios en herramientas de innovación y los conectamos en una comunidad de práctica del distrito.",in_s_3tag:"Medición",in_s_3t:"Índice de Innovación",in_s_3d:"Medimos y monitoreamos las capacidades de innovación de las áreas para reforzarlas donde más se necesita.",
+  in_m_e:"Metodología",in_m_t:"Cinco fases, foco en las personas.",in_m_d:"Cada proyecto recorre cinco fases que combinan escucha, creatividad, prueba y evidencia.",in_f_1t:"Contexto",in_f_1d:"Entendemos la institución, el problema y su alcance real.",in_f_2t:"Investigación",in_f_2d:"Escuchamos a vecinos y funcionarios; recogemos datos.",in_f_3t:"Ideación",in_f_3d:"Generamos ideas nuevas o mejoradas para el desafío.",in_f_4t:"Prototipo",in_f_4d:"Diseñamos y probamos la solución a pequeña escala.",in_f_5t:"Implementación",in_f_5d:"Escalamos lo que funciona y lo dejamos instalado.",
+  in_a_e:"Ámbitos de innovación",in_a_t:"Cuatro frentes de trabajo.",in_a_1t:"Estrategia y gobernanza",in_a_1d:"Alineamiento de equipos, colaboración entre áreas y cambios administrativos.",in_a_2t:"Experiencia y servicios",in_a_2d:"Mejora de la experiencia usuaria, lenguaje claro y cambios de comportamiento.",in_a_3t:"Procesos y tecnología",in_a_3d:"Rediseño de procesos internos con base tecnológica y uso de datos.",in_a_4t:"Cultura y capacidades",in_a_4d:"Instalación de una cultura de innovación en los equipos municipales.",
+  p_eyebrow:"Proyectos",p_title:"Innovación que mejora la vida del vecino.",p_lead:"Una muestra de los desafíos que abordamos junto a las gerencias del distrito.",p_1_tag:"Atención al vecino",p_1_t:"Rediseño de la atención de licencias de funcionamiento",p_2_tag:"Espacio público",p_2_t:"Parques más seguros co-diseñados con los vecinos",p_3_tag:"Trámites",p_3_t:"Trámites municipales en lenguaje claro",p_4_tag:"Movilidad",p_4_t:"Mejor experiencia de estacionamiento y ciclovías",p_5_tag:"Turismo",p_5_t:"Experiencia del turista en el corazón de Miraflores",p_6_tag:"Sostenibilidad",p_6_t:"Reciclaje vecinal con enfoque de comportamiento",p_note:"Proyectos ilustrativos para la maqueta. Se reemplazarán con casos reales del distrito.",
+  n_eyebrow:"Noticias",n_title:"Novedades del Lab.",n_lead:"Lo que pasa en la innovación pública de Miraflores.",n_soon:"Próximamente",n_soon2:"Próximamente",n_soon3:"Próximamente",n_1:"Miraflores lanza su Laboratorio de Innovación Pública",n_2:"Primera Red de Innovadores del distrito",n_3:"Resultados del primer Índice de Innovación municipal",n_note:"Contenido ilustrativo. Se reemplazará con noticias reales al entrar en operación.",
+  ct_eyebrow:"Contacto",ct_title:"Trabaja con el Lab.",ct_lead:"¿Tu gerencia tiene un desafío o quieres saber más sobre nuestra metodología? Escríbenos.",ct_f_e:"Escríbenos",ct_f_t:"Formulario",ct_nom:"Nombre",ct_ema:"Correo",ct_ger:"Gerencia / Área",ct_mot:"Motivo",ct_o1:"Tengo un desafío para co-crear",ct_o2:"Quiero sumarme a la Red de Innovadores",ct_o3:"Consulta sobre metodología",ct_o4:"Otro",ct_msg:"Mensaje",ct_send:"Enviar →",ct_note:"El formulario quedará operativo al conectarlo a un servicio como Formspree o Brevo. (Datos de contacto de ejemplo.)",ct_d_e:"Datos",ct_d_t:"Dónde estamos",ct_d_dir:"Municipalidad de Miraflores",ct_d_addr:"Av. Larco 400, Miraflores, Lima 15074",ct_d_mail:"Correo",
+  ft_p:"Laboratorio de innovación pública del distrito de Miraflores. Innovación al servicio de los vecinos.",ft_h1:"Explora",ft_h2:"Servicios",ft_h3:"Contacto",ft_s1:"Consultoría Ágil",ft_s2:"Red de Innovadores",ft_s3:"Índice de Innovación",ft_loc:"Miraflores, Lima, Perú",ft_copy:"© 2026 LabMiraflores. Propuesta.",ft_insp:"Laboratorio de innovación pública distrital."
+ },
+ en:{
+  skip:"Skip to content",
+  nav_home:"Home",nav_lab:"What is the Lab?",nav_innov:"Public innovation",nav_serv:"Our services",nav_met:"Methodology",nav_amb:"Innovation areas",nav_proj:"Projects",nav_news:"News",nav_contact:"Contact",nav_cta:"Work with the Lab",
+  h_eyebrow:"Public innovation · Miraflores",h_title:"Public innovation at the service of residents.",h_lead:"We are the innovation lab of the Miraflores district. We co-create solutions to the public problems that matter most, build innovation capacity within the municipality, and measure impact to improve services for citizens.",h_cta1:"About the Lab",h_cta2:"Our services",
+  h_m1:"innovation projects developed",h_m2:"municipal departments supported",h_m3:"public servants trained in innovation",h_m4:"of solutions institutionally adopted",
+  i_eyebrow:"What we do",i_title:"From problem to adopted solution.",i_lead:"We support the municipality's departments through the full cycle: we identify the problem, co-design solutions with those who will use them, test them, evaluate them, and help them become permanent.",
+  i_1t:"We identify",i_1d:"We work with departments to understand the real problem, using data and resident input.",i_2t:"We co-design",i_2d:"We create solutions with public servants and users, not for them.",i_3t:"We test & evaluate",i_3d:"We test prototypes, measure results and adjust with evidence.",i_4t:"We institutionalize",i_4d:"We help the solution get adopted and last in municipal management.",
+  sv_eyebrow:"Our services",sv_title:"Three ways to create public value.",sv_1_tag:"Service 01",sv_1_t:"Agile Consulting",sv_1_d:"We support departments in co-creating concrete solutions to problems with citizen impact, using flexible, people-centered methodologies.",sv_2_tag:"Service 02",sv_2_t:"Innovators Network",sv_2_d:"We train and connect municipal staff in a community that learns, shares and improves the district's services.",sv_3_tag:"Service 03",sv_3_t:"Innovation Index",sv_3_d:"We measure the innovation capacity of municipal areas to strengthen them and make evidence-based decisions.",
+  pj_eyebrow:"Projects",pj_title:"Innovation you can see on the street.",pj_note:"Illustrative projects for the mockup; to be replaced with real cases.",pj_1_tag:"Resident services",pj_1_t:"Redesign of business-license service",pj_2_tag:"Public space",pj_2_t:"Safer parks co-designed with residents",pj_3_tag:"Procedures",pj_3_t:"Municipal procedures in plain language",pj_cta:"See all projects →",
+  c_title:"Does your department have a challenge?",c_p:"Let's work together to turn it into a better experience for residents.",c_btn:"Work with the Lab →",
+  l_eyebrow:"What is the Lab?",l_title:"The innovation lab of Miraflores.",l_lead:"We are the municipality's unit that accelerates the transformation of public services for residents, using collaborative design methodologies.",
+  l_mv_e:"Purpose",l_mis_t:"Our mission",l_mis_d:"To co-create solutions to the district's priority public problems, build innovation capacity in municipal teams, and measure that capacity to strengthen it, in order to improve services and the relationship with citizens.",l_vis_t:"Our vision",l_vis_d:"For Miraflores to be the district with the best public-service experience in Peru, thanks to agile, experimental, collaborative and evidence-based management.",
+  l_pr_e:"Principles",l_pr_t:"How we work",l_p1:"We put people at the center of every solution.",l_p2:"We learn by testing: we prototype, measure and adjust.",l_p3:"We co-create with staff and residents, not from the desk.",l_p4:"We decide with evidence, not intuition.",l_p5:"We seek innovation that stays installed, not dependent on the Lab.",
+  l_ref_e:"References",l_ref_t:"Inspired by the world's best.",l_ref_d:"The Lab's model draws on international public-innovation references —such as the region's government labs, Bloomberg's municipal innovation teams and the OECD's innovation observatory— adapted to the scale and reality of a district like Miraflores.",
+  in_eyebrow:"Public innovation",in_title:"How we turn problems into solutions.",in_lead:"Our services, methodology and areas of work to transform the district's services.",
+  in_s_e:"Our services",in_s_t:"Three services, one goal.",in_s_1tag:"Co-creation",in_s_1t:"Agile Consulting",in_s_1d:"We support a department with a concrete challenge and co-create a solution with them, end to end, focused on the resident.",in_s_2tag:"Capacity",in_s_2t:"Innovators Network",in_s_2d:"We train public servants in innovation tools and connect them in a district community of practice.",in_s_3tag:"Measurement",in_s_3t:"Innovation Index",in_s_3d:"We measure and monitor areas' innovation capacity to reinforce it where it's most needed.",
+  in_m_e:"Methodology",in_m_t:"Five phases, people at the center.",in_m_d:"Each project runs through five phases combining listening, creativity, testing and evidence.",in_f_1t:"Context",in_f_1d:"We understand the institution, the problem and its real scope.",in_f_2t:"Research",in_f_2d:"We listen to residents and staff; we gather data.",in_f_3t:"Ideation",in_f_3d:"We generate new or improved ideas for the challenge.",in_f_4t:"Prototype",in_f_4d:"We design and test the solution at small scale.",in_f_5t:"Implementation",in_f_5d:"We scale what works and leave it installed.",
+  in_a_e:"Innovation areas",in_a_t:"Four fronts of work.",in_a_1t:"Strategy & governance",in_a_1d:"Team alignment, cross-area collaboration and administrative change.",in_a_2t:"Experience & services",in_a_2d:"User-experience improvement, plain language and behavior change.",in_a_3t:"Processes & technology",in_a_3d:"Redesign of internal processes with a tech base and data use.",in_a_4t:"Culture & capacity",in_a_4d:"Building a culture of innovation in municipal teams.",
+  p_eyebrow:"Projects",p_title:"Innovation that improves residents' lives.",p_lead:"A sample of the challenges we tackle with the district's departments.",p_1_tag:"Resident services",p_1_t:"Redesign of business-license service",p_2_tag:"Public space",p_2_t:"Safer parks co-designed with residents",p_3_tag:"Procedures",p_3_t:"Municipal procedures in plain language",p_4_tag:"Mobility",p_4_t:"Better parking and bike-lane experience",p_5_tag:"Tourism",p_5_t:"Tourist experience in the heart of Miraflores",p_6_tag:"Sustainability",p_6_t:"Neighborhood recycling with a behavioral approach",p_note:"Illustrative projects for the mockup. To be replaced with real district cases.",
+  n_eyebrow:"News",n_title:"Lab updates.",n_lead:"What's happening in Miraflores public innovation.",n_soon:"Coming soon",n_soon2:"Coming soon",n_soon3:"Coming soon",n_1:"Miraflores launches its Public Innovation Lab",n_2:"The district's first Innovators Network",n_3:"Results of the first municipal Innovation Index",n_note:"Illustrative content. To be replaced with real news once operating.",
+  ct_eyebrow:"Contact",ct_title:"Work with the Lab.",ct_lead:"Does your department have a challenge or want to know more about our methodology? Write to us.",ct_f_e:"Write to us",ct_f_t:"Form",ct_nom:"Name",ct_ema:"Email",ct_ger:"Department / Area",ct_mot:"Reason",ct_o1:"I have a challenge to co-create",ct_o2:"I want to join the Innovators Network",ct_o3:"Question about methodology",ct_o4:"Other",ct_msg:"Message",ct_send:"Send →",ct_note:"The form will work once connected to a service like Formspree or Brevo. (Sample contact details.)",ct_d_e:"Details",ct_d_t:"Where we are",ct_d_dir:"Municipality of Miraflores",ct_d_addr:"Av. Larco 400, Miraflores, Lima 15074",ct_d_mail:"Email",
+  ft_p:"Public innovation lab of the Miraflores district. Innovation at the service of residents.",ft_h1:"Explore",ft_h2:"Services",ft_h3:"Contact",ft_s1:"Agile Consulting",ft_s2:"Innovators Network",ft_s3:"Innovation Index",ft_loc:"Miraflores, Lima, Peru",ft_copy:"© 2026 LabMiraflores. Proposal.",ft_insp:"District public innovation lab."
+ }
+};
+(function(){
+  var pages=document.querySelectorAll('.page');
+  var menu=document.getElementById('nav-menu');
+  var toggle=document.querySelector('.menu-toggle');
+  function applyLang(lang){
+    document.documentElement.setAttribute('lang',lang);
+    document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.getAttribute('data-i18n');var v=I18N[lang][k];if(v===undefined)return;if(el.tagName==='META')el.setAttribute('content',v);else el.textContent=v;});
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){var a=b.getAttribute('data-lang-btn')===lang;b.classList.toggle('active',a);b.setAttribute('aria-pressed',a?'true':'false');});
+    try{localStorage.setItem('lm_lang',lang);}catch(e){}
+  }
+  function applyReveal(scope){var pr=window.matchMedia('(prefers-reduced-motion: reduce)').matches;var rev=scope.querySelectorAll('.reveal');if(pr||!('IntersectionObserver'in window)){rev.forEach(function(el){el.classList.add('is-visible');});return;}var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});rev.forEach(function(el){el.classList.remove('is-visible');io.observe(el);});}
+  function showPage(name,anchor){pages.forEach(function(p){p.classList.remove('is-active');});var t=document.getElementById('page-'+name);if(!t){t=document.getElementById('page-inicio');name='inicio';}t.classList.add('is-active');document.querySelectorAll('.nav-item').forEach(function(it){it.classList.remove('is-current');});document.querySelectorAll('[data-go="'+name+'"]').forEach(function(a){var li=a.closest('.nav-item');if(li)li.classList.add('is-current');});try{history.replaceState(null,'','#'+name+(anchor?('/'+anchor):''));}catch(e){}applyReveal(t);if(anchor){var el=document.getElementById(anchor);if(el){setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},60);return;}}window.scrollTo({top:0,behavior:'smooth'});}
+  document.addEventListener('click',function(e){var link=e.target.closest('[data-go]');if(!link)return;e.preventDefault();if(menu){menu.classList.remove('is-open');if(toggle)toggle.setAttribute('aria-expanded','false');}showPage(link.getAttribute('data-go'),link.getAttribute('data-anchor'));});
+  if(toggle&&menu){toggle.addEventListener('click',function(){var o=menu.classList.toggle('is-open');toggle.setAttribute('aria-expanded',o?'true':'false');});}
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang-btn'));});});
+  var initLang='es';try{var s=localStorage.getItem('lm_lang');if(s&&I18N[s])initLang=s;else if(navigator.language&&navigator.language.startsWith('en'))initLang='en';}catch(e){}applyLang(initLang);
+  function fromHash(){var h=(location.hash||'').replace('#','');if(!h){showPage('inicio');return;}var p=h.split('/');showPage(p[0],p[1]);}fromHash();window.addEventListener('hashchange',fromHash);
+})();
+</script>
+</body>
+</html>
